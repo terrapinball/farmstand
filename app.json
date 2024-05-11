@@ -7,7 +7,7 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "csa-app",
-    "slug": "csa-app"
+    "name": "farmstand",
+    "slug": "farmstand"
   }
 }
