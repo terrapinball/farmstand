@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es6"
+    ],
+    "types": [
+      "react-native"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "moduleResolution": "node",
+  "include": [
+    "./**/*"
+  ],
+  "extends": "expo/tsconfig.base"
+}

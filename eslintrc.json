@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "18.2"
+    }
+  },
+  "plugins": [
+    "react-refresh",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-no-target-blank": "off",
+    "react-refresh/only-export-components": [
+      "warn",
+      {
+        "allowConstantExport": true
+      }
+    ],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": [2, "always"],
+    "no-irregular-whitespace": 2,
+    "quotes": "off",
+    "react/no-unknown-property": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+  }
+}
